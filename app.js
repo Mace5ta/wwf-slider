@@ -8,7 +8,7 @@ const slidesCount = mainSlide.querySelectorAll('div').length
 
 let activeSlideIndex = 0
 
-sidebar.style.top = `-${(slidesCount - 1) * 100}vh` //расчет соответствия картинки и нужного сайдбара
+sidebar.style.top = `-${(slidesCount - 1) * 100}vh` //Расчет соответствия картинки и нужного сайдбара
 
 upBtn.addEventListener('click', () => {
     changeSlide('up')
@@ -24,7 +24,7 @@ document.addEventListener('keydown', event => {
     } else if (event.key === 'ArrowDown') {
         changeSlide('down')
     }
-}) //Добавляем поддержку клавиатуры
+}) //Добавление поддержки клавиатуры
 
 function changeSlide(direction) {
     if (direction === 'up') {
